@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/bonanza",
   "title": "Bonanza",
   "description": "Bonanza MCP — 'Bonapitit' API (api.bonanza.com/docs), search + item detail",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/bonanza",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-bonanza",
