@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-bonanza",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Bonanza MCP — 'Bonapitit' API (api.bonanza.com/docs), search + item detail",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-d13a3547bd2e24bdd6eed58aa58e1fbf185978b99c7fc232be18c5a3eec71c7d",
-    "sourceCommit": "5d8d3a58a457b8464c117515d81b8b6ecb53fdfb"
+    "sourceHash": "v1-c1b904d3bc4dd590ae8db61639ad4c02b850aa619458cdab08ca024dd96b9704",
+    "sourceCommit": "70a4e816a9195016cd4af92dca2019485d4c3865"
   }
 }
