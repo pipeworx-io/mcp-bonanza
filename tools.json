@@ -1,0 +1,70 @@
+[
+  {
+    "name": "bonanza_search",
+    "description": "Search active Bonanza marketplace listings by keyword (Bonapitit findItemsByKeywords). Requires a Bonanza API devID. No sold data — orders are seller-scoped on this API.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "keywords": {
+          "type": "string",
+          "description": "Search keywords, e.g. \"vintage brass lamp\""
+        },
+        "entries_per_page": {
+          "type": "number",
+          "description": "1-100 (default 25)"
+        },
+        "page_number": {
+          "type": "number",
+          "description": "Page number, 1-based (default 1)"
+        },
+        "sort_order": {
+          "type": "string",
+          "description": "BestMatch (default) | CurrentPriceHighest | PricePlusShippingLowest | EndTimeSoonest"
+        }
+      },
+      "required": [
+        "keywords"
+      ]
+    }
+  },
+  {
+    "name": "bonanza_search_by_category",
+    "description": "Search active Bonanza marketplace listings within a category ID (Bonapitit findItemsByCategory). Requires a Bonanza API devID.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "category_id": {
+          "type": "string",
+          "description": "Bonanza category ID"
+        },
+        "entries_per_page": {
+          "type": "number",
+          "description": "1-100 (default 25)"
+        },
+        "page_number": {
+          "type": "number",
+          "description": "Page number, 1-based (default 1)"
+        }
+      },
+      "required": [
+        "category_id"
+      ]
+    }
+  },
+  {
+    "name": "bonanza_get_item",
+    "description": "Get a single Bonanza listing by item ID (Bonapitit getSingleItem). Requires a Bonanza API devID.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "item_id": {
+          "type": "string",
+          "description": "Bonanza item ID"
+        }
+      },
+      "required": [
+        "item_id"
+      ]
+    }
+  }
+]

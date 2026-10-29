@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-bonanza",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Bonanza MCP — 'Bonapitit' API (api.bonanza.com/docs), search + item detail",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-bonanza": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "bonanza"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-bonanza.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/bonanza",
   "pipeworx": {
-    "sourceHash": "v1-c1b904d3bc4dd590ae8db61639ad4c02b850aa619458cdab08ca024dd96b9704",
-    "sourceCommit": "70a4e816a9195016cd4af92dca2019485d4c3865"
+    "mode": "gateway",
+    "slug": "bonanza",
+    "gatewaySlug": "bonanza",
+    "sourceHash": "v1-7ef11e87e798414636672cffbb109c297e99b5e2c488ce0114b4b5eb3f911970",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }
