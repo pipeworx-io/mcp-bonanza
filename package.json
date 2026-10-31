@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-bonanza",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Bonanza MCP — 'Bonapitit' API (api.bonanza.com/docs), search + item detail",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "bonanza",
     "gatewaySlug": "bonanza",
-    "sourceHash": "v1-7ef11e87e798414636672cffbb109c297e99b5e2c488ce0114b4b5eb3f911970",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-692676265ece4cbddeb4c0c838bcb06c70ace022309c5013fb9f9cb421ae841f",
+    "sourceCommit": "547a3983b42dacf4389ca474860b0a1dee8e6053"
   }
 }
